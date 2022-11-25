@@ -23,6 +23,7 @@ body {
   height: 15rem;
   border-radius: $borderRadius;
   display: inline-block;
+  position: relative;
 }
 
 .firstSquare {
@@ -48,6 +49,7 @@ body {
   border-right: 15rem solid #ffe0d6;
   @include animation3();
   transition: transform 3s;
+  position: relative;
 }
 
 .secondSquare:hover {
@@ -70,8 +72,63 @@ body {
   border-right: 15rem solid #fc441a;
   @include animation4();
   transition: border-radius 2s;
+  position: relative;
 }
 
 .fourthSquare:hover {
   border-radius: 50%;
+}
+
+.text1 {
+  position: absolute;
+  bottom: -120%;
+  right: 10%;
+  font-size: 240px;
+  color: white;
+  display: none;
+}
+
+.text2 {
+  position: absolute;
+  top: -250px;
+  right: -150px;
+  font-size: 240px;
+  color: red;
+  display: none;
+}
+
+.text3 {
+  position: absolute;
+  top: 500;
+  right: 0;
+  font-size: 240px;
+  color: blue;
+  display: none;
+  margin: 0;
+}
+
+.text4 {
+  position: absolute;
+  bottom: 0;
+  left: 150;
+  font-size: 240px;
+  color: green;
+  display: none;
+  margin: 0;
+}
+
+.firstSquare:hover .text1 {
+  display: block;
+}
+
+.secondSquare:hover .text2 {
+  display: block;
+}
+
+.thirdSquare:hover .text3 {
+  display: block;
+}
+
+.fourthSquare:hover .text4 {
+  display: block;
 }

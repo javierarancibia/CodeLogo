@@ -54,7 +54,7 @@
 @mixin animation3() {
   animation-name: animation3;
   position: relative;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-timing-function: ease-in;
 }
 
@@ -62,16 +62,17 @@
 
 @keyframes animation4 {
   0% {
-    transform: rotate(0deg);
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.5);
   }
   90% {
-    transform: rotate(340deg);
-  }
-  95% {
-    transform: rotate(380deg);
+    transform: scale(1.1);
+    transform: rotate(365deg);
   }
   100% {
-    transform: rotate(365deg);
+    transform: scale(1);
   }
 }
 
