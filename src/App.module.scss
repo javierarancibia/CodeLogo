@@ -28,6 +28,18 @@ body {
 .firstSquare {
   @include rounded-squares(#ffcc33, 15rem 0 0 0);
   @include animation1();
+  transition: background-color 2s;
+}
+
+.firstSquare:hover {
+  background-color: pink;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.25) 1px,
+    transparent 2px,
+    transparent 6px
+  );
 }
 
 .secondSquare {
@@ -35,11 +47,21 @@ body {
   border-bottom: 15rem solid #1294d7;
   border-right: 15rem solid #ffe0d6;
   @include animation3();
+  transition: transform 3s;
+}
+
+.secondSquare:hover {
+  transform: scale(0.5);
 }
 
 .thirdSquare {
   @include rounded-squares(#c8e4d2, 0 0 0 15rem);
   @include animation2();
+  transition: border-radius 2s;
+}
+
+.thirdSquare:hover {
+  border-radius: 0 0 0 2rem;
 }
 
 .fourthSquare {
@@ -47,4 +69,9 @@ body {
   border-top: 15rem solid #262626;
   border-right: 15rem solid #fc441a;
   @include animation4();
+  transition: border-radius 2s;
+}
+
+.fourthSquare:hover {
+  border-radius: 50%;
 }

@@ -12,6 +12,7 @@ export default function App() {
         <div className={styles.thirdSquare}></div>
         <div className={styles.fourthSquare}></div>
       </div>
+      <h5>Hover the squares!</h5>
     </div>
   );
 }
