@@ -1,0 +1,83 @@
+// Animation 1
+
+@keyframes animation1 {
+  from {
+    right: 90px;
+    bottom: 50px;
+  }
+  to {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+@mixin animation1() {
+  animation-name: animation1;
+  position: relative;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
+// Animation 2
+
+@keyframes animation2 {
+  from {
+    right: 90px;
+    top: 50px;
+  }
+  to {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@mixin animation2() {
+  animation-name: animation2;
+  position: relative;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
+// Animation 3
+
+@keyframes animation3 {
+  from {
+    left: 90px;
+    bottom: 70px;
+  }
+  to {
+    left: 0px;
+    bottom: 0px;
+  }
+}
+
+@mixin animation3() {
+  animation-name: animation3;
+  position: relative;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
+// Animation 4
+
+@keyframes animation4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(340deg);
+  }
+  95% {
+    transform: rotate(380deg);
+  }
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+@mixin animation4() {
+  animation-name: animation4;
+  position: relative;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}

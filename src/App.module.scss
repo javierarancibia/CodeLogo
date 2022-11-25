@@ -1,0 +1,50 @@
+@import './styles/Animations.scss';
+
+body {
+  padding: 0;
+  background-color: rgb(249, 246, 244);
+}
+
+.main {
+  padding: 5rem auto;
+  height: 100vh;
+  margin: 10rem 0;
+}
+
+.container {
+  width: 30rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+@mixin rounded-squares($backgroundColor, $borderRadius) {
+  background-color: $backgroundColor;
+  width: 15rem;
+  height: 15rem;
+  border-radius: $borderRadius;
+  display: inline-block;
+}
+
+.firstSquare {
+  @include rounded-squares(#ffcc33, 15rem 0 0 0);
+  @include animation1();
+}
+
+.secondSquare {
+  display: inline-block;
+  border-bottom: 15rem solid #1294d7;
+  border-right: 15rem solid #ffe0d6;
+  @include animation3();
+}
+
+.thirdSquare {
+  @include rounded-squares(#c8e4d2, 0 0 0 15rem);
+  @include animation2();
+}
+
+.fourthSquare {
+  display: inline-block;
+  border-top: 15rem solid #262626;
+  border-right: 15rem solid #fc441a;
+  @include animation4();
+}
